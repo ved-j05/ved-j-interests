@@ -1,43 +1,194 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Vedarth's Interests</title>
-  </head>
-  <body>
-    <h1>My Interests</h1>
-    <p>Howdy! I'm Vedarth. This page is about a few things I like.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Vedarth Jain — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vedarth Jain — MIS @ Texas A&M | Consulting & tech-focused projects" />
+  <style>
+    :root {
+      --max: 860px;
+    }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0; color: #0b0b0c; background: #fafafa;
+    }
+    header, main, footer { padding: 24px; }
+    .wrap { max-width: var(--max); margin: 0 auto; }
+    header {
+      background: #111; color: #fff;
+      padding-top: 48px; padding-bottom: 48px;
+    }
+    h1 { font-size: 2rem; margin: 0 0 4px; }
+    .sub { opacity: .85; margin: 0 0 12px; }
+    .links a { color: #cde2ff; text-decoration: none; margin-right: 16px; }
+    .card {
+      background: #fff; border-radius: 14px; padding: 20px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.06); margin: 16px 0;
+    }
+    h2 { font-size: 1.25rem; margin: 0 0 10px; }
+    h3 { font-size: 1rem; margin: 0 0 2px; }
+    .meta { color:#555; font-size:.95rem; margin-bottom:8px; }
+    ul { margin: 8px 0 0 18px; }
+    li { margin: 6px 0; }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 760px) {
+      .grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    }
+    .pill {
+      display:inline-block; padding:6px 10px; border-radius:999px;
+      background:#f1f5ff; color:#1a2a5a; font-size:.9rem; margin:4px 6px 0 0;
+    }
+    footer { color:#555; text-align:center; }
+    nav { margin-top:12px }
+    nav a { margin-right:12px; color:#fff; text-decoration:none; opacity:.95 }
+    nav a:hover { text-decoration: underline; }
+    .section-title { margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Vedarth Jain</h1>
+      <p class="sub">BBA in Management Information Systems (MIS) • Minor: AI in Business • Texas A&amp;M University</p>
+      <div class="links">
+        <a href="mailto:ved_jain@tamu.edu">ved_jain@tamu.edu</a>
+        <a href="tel:+18327576608">832-757-6608</a>
+        <a href="https://linkedin.com/in/vedarth-jain/" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Add GitHub when ready -->
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills & Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h2>F1 & Cars</h2>
-    <p>My favorite F1 team is Ferrari. I like learning about race strategy and car builds.</p>
-    <ul>
-      <li>Favorite tracks: Spa, Suzuka</li>
-      <li>Dream cars: Porsche 911 GT3, GR Yaris</li>
-    </ul>
+  <main class="wrap">
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I’m a sophomore at Texas A&amp;M (Mays) studying MIS with a Business in AI minor, aiming for technology-oriented consulting roles.
+        I enjoy work that blends problem-solving, data, and process improvement—especially where there’s ambiguity and a need to bring structure.
+        Outside class, I’m active in consulting projects and professional organizations on campus.
+      </p>
+    </section>
 
-    <h2>College Football</h2>
-    <p>I follow Texas A&M football and keep an eye on rivalry games.</p>
-    <ul>
-      <li>Things I watch: red-zone efficiency, explosive plays</li>
-      <li>Best part: game day with friends</li>
-    </ul>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-title">
+      <h2>Experience</h2>
 
-    <h2>Badminton</h2>
-    <p>I play for fun and try to improve a little each week.</p>
-    <ul>
-      <li>Working on: split-step timing, backhand clears</li>
-      <li>Gear: medium-flex racket, 24–26 lbs tension</li>
-    </ul>
+      <div class="card">
+        <h3>Internal Audit Intern — Apache Corporation</h3>
+        <div class="meta">Houston, TX • May 2025 – Aug 2025</div>
+        <ul>
+          <li>Directed three phases of the Sustainability Report across EHS &amp; Governance, coordinating with department heads to ensure transparent, accurate public disclosures.</li>
+          <li>Assessed SOX controls (payroll reconciliation, SOD, SAP security) and recommended process changes that reduced validation time by ~15%.</li>
+          <li>Partnered with finance leadership on acquisition analysis and cash-flow reporting, contributing to diligence and liquidity planning.</li>
+        </ul>
+      </div>
 
-    <h2>LEGO</h2>
-    <p>I like sets with cars and small city scenes.</p>
-    <ul>
-      <li>Current: Speed Champions</li>
-      <li>Next: a Technic supercar</li>
-    </ul>
+      <div class="card">
+        <h3>Engagement Analyst — Lake Walk (via Texas A&amp;M Consulting Group)</h3>
+        <div class="meta">Bryan, TX • Oct 2024 – Mar 2025</div>
+        <ul>
+          <li>Built targeted marketing to position the pavilion as a premier venue, adding 4+ annual events.</li>
+          <li>Improved lead quality and client experience by streamlining the event inquiry form, cutting friction by ~25%.</li>
+          <li>Analyzed event profitability to guide focus toward higher-impact bookings.</li>
+        </ul>
+      </div>
 
-    <h2>Contact</h2>
-    <p>Email: vedarthjain11@gmail.com</p>
+      <div class="card">
+        <h3>Engagement Analyst — Texas A&amp;M SAE Baja (via Texas A&amp;M Consulting Group)</h3>
+        <div class="meta">College Station, TX • Feb 2024 – May 2024</div>
+        <ul>
+          <li>Created a strategic budgeting framework to improve cost efficiency and resource allocation, reducing debt by ~$2,500.</li>
+          <li>Ran targeted cold outreach (LinkedIn, email, phone) to engage sponsors and secure funding opportunities.</li>
+          <li>Coordinated a showcase with sponsored food trucks (~50 free meals), alumni Q&amp;A, and sponsor-recruiter networking.</li>
+        </ul>
+      </div>
+    </section>
 
-    <p>Thanks for visiting!</p>
-  </body>
+    <!-- LEADERSHIP & INVOLVEMENT -->
+    <section id="leadership" class="section-title">
+      <h2>Leadership &amp; Involvement</h2>
+
+      <div class="card">
+        <h3>Texas A&amp;M Consulting Group — L2 Consultant</h3>
+        <div class="meta">Aug 2023 – Present</div>
+        <ul>
+          <li>Worked with 4–5 peers on pro bono engagements, combining market research and financial benchmarking into client-ready recommendations.</li>
+          <li>Participated in resume/interview workshops led by industry practitioners to sharpen consulting readiness.</li>
+          <li>Competed in case events (McKinsey, Deloitte, Accenture), applying structured problem-solving and receiving expert feedback.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Alpha Kappa Psi — Lambda Chi Chapter (Brother)</h3>
+        <div class="meta">Jan 2024 – Present</div>
+        <ul>
+          <li>Connected members with recruiters from MBB, Big 3, and boutiques; hosted guest speakers (e.g., Tesla, Bain &amp; Co.).</li>
+          <li>Helped plan recruitment, increasing membership by ~40% and deepening alumni engagement and “Big Event” participation.</li>
+          <li>Collaborated on a professional development track that improved internship placement across consulting and finance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-title">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Texas A&amp;M University — Mays Business School</h3>
+        <div class="meta">College Station, TX • BBA in Management Information Systems • May 2027</div>
+        <ul>
+          <li>Minor: AI in Business • GPA: 3.7</li>
+          <li>Aggies in Consulting (Cohort 0): high-impact, collaborative prep for consulting roles.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS & INTERESTS -->
+    <section id="skills" class="section-title">
+      <h2>Skills &amp; Interests</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Certifications &amp; Training</h3>
+          <span class="pill">Microsoft Excel 2019 Associate</span>
+          <span class="pill">Intuit QuickBooks Online</span>
+          <!-- Add AWS Academy / networking labs here if you want -->
+        </div>
+        <div class="card">
+          <h3>Interests</h3>
+          <span class="pill">Motorsports Racing</span>
+          <span class="pill">College Football</span>
+          <span class="pill">LEGO</span>
+          <span class="pill">Badminton</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-title">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:ved_jain@tamu.edu">ved_jain@tamu.edu</a> • Phone: <a href="tel:+18327576608">832-757-6608</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/vedarth-jain/" target="_blank" rel="noopener">linkedin.com/in/vedarth-jain/</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Vedarth Jain</div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
+
